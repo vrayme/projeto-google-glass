@@ -1,0 +1,123 @@
+<!DOCTYPE html>  
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificações</title> 
+    <link rel="stylesheet" href="_css/estilo.css"> 
+    <link rel="stylesheet" href="_css/form.css">
+</head>  
+<script src="_javascript/funcoes.js"> </script>
+<script>
+  function calc_total (){
+    var qtd = parseInt(document.getElementById ('cQtd').value);
+    tot = qtd*1500;
+    document.getElementById ('cTot').value = tot;
+  }
+</script>
+<body> 
+<div id="Interface"> 
+<header id="cabecalho"> 
+      <hgroup> 
+      <h1>Google Glass</h1> 
+      <h2>A revolução do Google está chegando</h2> 
+      </hgroup> 
+
+   <img id = "iconeOculos"src="_imagens/contato.png" alt="imagen01">
+   <nav id = "menu"> 
+      <h1>Menu Principal</h1>
+    <ul type = "disc"> 
+        <a href="index.html"><li onmousemove="mudaFoto ('_imagens/home.png')" onmouseout="mudaFoto ('_imagens/contato.png')">Home</li></a> 
+            <a href="specs.html" target="_blank"><li onmousemove="mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto ('_imagens/contato.png')">Especificações</li></a>  
+            <a href="fotos.html"><li onmousemove="mudaFoto ('_imagens/fotos.png')" onmouseout="mudaFoto ('_imagens/contato.png')">Fotos</li></a>
+            <a href="multimidia.html"><li onmousemove="mudaFoto ('_imagens/multimidia.png')" onmouseout="mudaFoto ('_imagens/contato.png')">Multimídia</li></a>
+            <a href="fale-conosco.html"><li onmousemove="mudaFoto ('_imagens/contato.png')" onmouseout="mudaFoto ('_imagens/contato.png')">Fale conosco</li></a>
+   </ul>
+   </nav> 
+</header> 
+
+<section id="corpo-full">
+  <article id="noticia-principal">
+  <header id="cabecalho-artigo">
+  <hgroup>
+  <h3>Glass > contato </h3>
+  <h1>Formularios de contato </h1>
+  <h2>por Victor Rayme</h2>
+  <h3 class="direita">Atualizado em 03/Dezembro/2022</h3>
+  </hgroup>
+  </header>
+
+  <form method="post" id="fContato" action="mailton:victorraymesn@gmail.com" onabort="calc_total();">
+  <fieldset id="usuario">
+ <legend> Identificação do Usuário</legend>
+  <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
+  <p><label for="tSenha">Senha:</label> <input type="password" name="cSenha" id="tSenha" size="8" maxlength="8" placeholder="Senha"></p>
+  <p><label for="tEmail">E-mail:</label> <input type="email" name="cEmail" id="tEmail" size="50" maxlength="50" placeholder="E-mail"></p>
+  <fieldset id="sexo">
+   <legend>Sexo</legend>
+     <input type="radio" name="cSexto" id="tMasc"> <label for="tMasc">Masculino</label> <br>
+    <input type="radio" name="cSexto" id="tFem"> <label for="tFem">Feminino</label>
+  </fieldset>
+  <p><label for="tData">Data de Nascimento:</label> <input type="date" name="cData" id="tData"></p>
+</fieldset>
+<fieldset id="endereco">
+<legend>Endereço do Usuário</legend>
+  <p><label for="tRua">Logradouro:</label> <input type="text" name="cRua" id="tRua" size="15" maxlength="80" placeholder="Rua, Av, Trav"></p>
+  <p><label for="tNumero">Número:</label> <input type="number" name="cNumero" id="tNumero" min="0" max="9999999" placeholder="Numero"></p>
+  <p><label for="tEst">Estado:</label> <select name="cEst" id="tEst">
+    <optgroup label="Região Norte">
+      <option value="PA">Pará</option>
+      <option value="AM">Amazonas</option>
+      <option value="RO">Roraima</option>
+      <option value="TO">Tocantis</option>
+    </optgroup>
+    <optgroup label="Outras Regiões">
+      <option value="SP">São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="MG">Minas gerais</option>
+    </optgroup>
+  </select></p>
+  <p><label for="tCidade">Cidade:</label> <input type="text" name="cCidade" id="tCidade" size="20" maxlength="40" placeholder="Sua cidade" list="cidades-bel"></p>
+  <datalist id="cidades-bel"> 
+    <option value="Marituba"></option>
+    <option value="Ananideua"></option>
+    <option value="Belém"></option>
+    <option value="Benevides"></option>
+
+  </datalist>
+  
+</fieldset>
+<fieldset id="mensagem">
+<legend>Mensagem do Usuário</legend>
+  <p><label for="tUrg">Grau de Urgência: Min</label> <input type="range" name="cUrg" id="tUrg" min="0" max="10" step="2">Max</p> 
+  <p><label for="tMsg">Mensagem:</label> 
+  <textarea name="cMsg" id="tMsg" cols="45" rows="10" placeholder="Deixe aqui sua Mensagem">
+  </textarea>
+</p>
+</fieldset>
+<fieldset id="pedido">
+<legend>Quero um Google Glass</legend>
+  <p> <input type="checkbox" name="tPed" id="cPed" checked>
+    <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+  <p><label for="cCor">Cor:</label> 
+  <input type="color" name="tCor" id="cor" value="#0000FF"></p>
+  <p><label for="cQtd">Quantidade:</label> <input type="number" name="tQtd" id="cQtd" value="0" min="1" max="5"></p>
+  <p><label for="cTot">Preço Total: R$</label>
+  <input type="number" name = "tTot" id="cTot" placeholder="Total a pagar"></p>
+</fieldset>
+
+<input type="image" name ="cEnviar"src="_imagens/botao-enviar.png" alt="">
+</form>
+
+
+</article>
+</section>
+<footer id="rodape">
+    <p><h3> &copy; Copyright 2022 - by Victor Rayme &reg;</h3>
+    <h3> <a href="https://www.linkedin.com/in/victor-rayme-7b9595241/" target="_blank">Linkedin |</a>
+     <a href="https://" target="_blank">GitHub</a></h3></p>
+    </footer>
+    </div> <!--fechamento da tag de fechamento da divisao da interface-->
+    </body> <!--fechamento do corpo do site-->
+    </html>

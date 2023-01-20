@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Titillium +Web:wght@200 & display=swap');
+@font-face {
+    font-family: 'fontetdc';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
+
+p { /*paragrafo*/
+    text-align: justify; /*alinhamento de texto*/
+    text-indent: 30px; /*identação de texto*/
+    
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body{ /*corpo projeto/site*/
+    background-color: #dddddd; /*cor do corpo do site*/
+    backface-visibility: visible; /*visibilidade*/
+    font-family: Arial, sans-serif;
+} 
+
+div#Interface {
+  width: 900px; /*tamanho da div*/
+  background-color: white; /*cor do body*/
+  margin: -20px auto 0px auto; /*configurações de margens*/
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /*efeito de sombra*/
+  padding: 10px; /*A propriedade padding define uma a distância entre o conteúdo de 
+  um elemento e suas bordas. É um atalho que evita definir uma distância
+  para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left )*/
+}
+
+header#cabecalho img#iconeOculos {
+    position: absolute; /*modifica a posicao independente do objeto relativo*/
+    left: 915px; /*anda pro lado direito*/
+    top: 50px; /*baixo e pra cima*/
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+
+}
+
+header#cabecalho  h1 {
+    font-family: fontetdc, sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30pt;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/*Formatação de imagens com CSS*/
+
+figure.foto-legenda { /*nome da tag.nome da imagem*/
+    position: relative; /*posição relativa, a foto fica extamente onde está no hmtl*/
+    border: 8px solid white; /*borda*/
+    box-shadow: 1px 1px 4px black; /*efeito da borda*/
+}
+
+figure.foto-legenda img { /*nome da tag.nome da imagem + img (todas as imagens)*/
+   width: 100%; /*largura*/
+   height: 100%; /*altura*/
+}
+
+figure.foto-legenda figcaption { /*nome da tag.id da imagem + tag de legenda da imagem*/
+    opacity: 0; /*opaciadade*/
+    position: absolute; /*posicao absoluta*/
+    top: 0px; /*topo*/
+    background-color: rgba(0, 0, 0, 0.4); /*cor da figura*/
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px; /*utilizada para definir o espaçamento ao redor de um elemento*/
+    box-sizing: border-box; 
+    transition: opacity 1s;
+
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*Formatação do Menu do Site com CSS*/
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -25px;
+  left: 470px;
+}
+
+nav#menu li {
+    display:inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    font-family: fontetdc, sans-serif;
+    color: #3f3e3e;
+    
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+    text-decoration: underline;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    
+}
+
+nav#menu a:hover {
+    color: #dddddd;
+    
+}
+
+section#corpo {
+    display: block;
+    width: 475px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 10px 0px 5px 10px;
+    margin: 10px 0px 10px 0px
+    
+}
+header#cabecalho-artigo h1 {
+    font-family: fontetdc, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #888888;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 10pt;
+    color: #888888;
+}
+
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+
+}
+
+table#tabelaspec td.cd {
+    color: black;
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 9pt;
+}
+
+
+aside#lateral {
+    display: block;
+    width: 370px;
+    float: right;
+    background-color: #cecece;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px   rgba(0, 0, 0, 0.5)
+}
+
+aside#lateral h1 {
+    font-family: fontetdc, sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+  background-color: #606060;
+  font-size: 13pt;
+  color: #ffffff;
+  padding: 5px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape h3 {
+    text-align: center;
+}
+
+video#video01{
+    width: 470px;
+    margin-top: -15px;
+    box-shadow: 2px 2px 2px   rgba(0, 0, 0, 0.5)
+    
+}
+video#video02{
+    width: 365px;
+    margin-top: -15px;
+    box-shadow: 2px 2px 2px   rgba(0, 0, 0, 0.5)
+
+}

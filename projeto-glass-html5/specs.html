@@ -1,0 +1,67 @@
+<!DOCTYPE html>  <!--Avisa a web que será um documeto HTML5-->
+<html lang="pt-br"> <!--Linguagem/Idioma-->
+<head> <!--Cabeça do site, cabeçalho-->
+    <meta charset="UTF-8"> <!--Padrão latino de escrita, acentuação etc-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificações</title> <!--Titulo da pagina-->
+    <link rel="stylesheet" href="_css/estilo.css"> <!--Link do CSS3-->
+    <link rel="stylesheet" href="_css/specs.css">
+</head>  <!--fechamento do cabeçalho-->
+<script src="_javascript/funcoes.js">
+</script>
+<body> <!--abertura do corpo do site-->
+
+<div id="Interface"> <!--tag de divisão, área de divisão da interface-->
+
+<header id="cabecalho"> <!--tag de cabeçalho-->
+
+<hgroup> <!--tag de agrupamento de títulos do mesmo sentido-->
+<h1>Google Glass</h1> <!--título princial 01-->
+<h2>A revolução do Google está chegando</h2>  <!--título 02 subtitulo  do 01-->
+</hgroup> <!--fechamento da tag de agrupameno-->
+<img id = "iconeOculos"src="_imagens/glass-oculos-preto-peq.png" alt="imagen01"> <!--tag para inserir imagens, src = caminho da imagem, onde esta localizada no pc, alt = descrição da mesma-->
+<nav id = "menu"> <!--tag de navegação do site-->
+  <h1>Menu Principal</h1>
+    <ul> <!--lista não ordenada do site, tbm tem ol = lista ordenada-->
+   <a href="index.html"><li onmousemove="mudaFoto ('_imagens/home.png')" onmouseout="mudaFoto ('_imagens/especificacoes.png')">Home</li></a> <!--<a> tag de link<a/>, <li> tag de item </li>-->
+   <a href="specs.html" target="_blank"><li onmousemove="mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto ('_imagens/especificacoes.png')">Especificações</li></a> <!--taget = para abrir o link em outra aba-->
+   <a href="fotos.html"><li onmousemove="mudaFoto ('_imagens/fotos.png')" onmouseout="mudaFoto ('_imagens/especificacoes.png')">Fotos</li></a>
+   <a href="multimidia.html"><li onmousemove="mudaFoto ('_imagens/multimidia.png')" onmouseout="mudaFoto ('_imagens/especificacoes.png')">Multimídia</li></a>
+   <a href="fale-conosco.html"><li onmousemove="mudaFoto ('_imagens/contato.png')" onmouseout="mudaFoto ('_imagens/especificacoes.png')">Fale conosco</li></a>
+  </ul>
+</nav> <!--fechamento da tag de navegação-->
+</header> <!--fechamento da tag de cabeçalho-->
+
+<section id="corpo-full">
+  <article id="noticia-principal">
+  <header id="cabecalho-artigo">
+  <hgroup>
+  <h3>Glass > Especificações</h3>
+  <h1>Raio-X no Google Glass</h1>
+  <h2>por Victor Rayme</h2>
+  <h3 class="direita">Atualizado em 03/Dezembro/2022</h3>
+  </hgroup>
+  </header>
+        <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+  <section id="conteudo">
+    <img src="_imagens/glass-esquema-marcado.jpg" alt="conteuo" usemap="#meumapa">
+    <map name="meumapa">
+      <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" alt="" target="janelas">
+      <area shape="circle" coords="158,243,12" href="google-glass.html#camera" alt="" target="janelas">
+      <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" alt="" target="janelas">
+      <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" alt="" target="janelas">
+    </map>
+    <iframe src="google-glass.html" name="janelas" id="frame-spec"></iframe>
+  </section>
+</article>
+</section>
+
+<footer id="rodape">
+    <p><h3> &copy; Copyright 2022 - by Victor Rayme &reg;</h3>
+    <h3> <a href="https://www.linkedin.com/in/victor-rayme-7b9595241/" target="_blank">Linkedin |</a>
+     <a href="https://" target="_blank">GitHub</a></h3></p>
+    </footer>
+    </div> <!--fechamento da tag de fechamento da divisao da interface-->
+    </body> <!--fechamento do corpo do site-->
+    </html>

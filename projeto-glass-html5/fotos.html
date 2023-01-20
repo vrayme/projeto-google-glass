@@ -1,0 +1,66 @@
+<!DOCTYPE html>  <!--Avisa a web que será um documeto HTML5-->
+<html lang="pt-br"> <!--Linguagem/Idioma-->
+<head> <!--Cabeça do site, cabeçalho-->
+    <meta charset="UTF-8"> <!--Padrão latino de escrita, acentuação etc-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificações</title> <!--Titulo da pagina-->
+    <link rel="stylesheet" href="_css/estilo.css"> <!--Link do CSS3-->
+    <link rel="stylesheet" href="_css/fotos.css">
+</head>  <!--fechamento do cabeçalho-->
+<script src="_javascript/funcoes.js">
+</script>
+<body> <!--abertura do corpo do site-->
+
+<div id="Interface"> <!--tag de divisão, área de divisão da interface-->
+
+<header id="cabecalho"> <!--tag de cabeçalho-->
+
+<hgroup> <!--tag de agrupamento de títulos do mesmo sentido-->
+<h1>Google Glass</h1> <!--título princial 01-->
+<h2>A revolução do Google está chegando</h2>  <!--título 02 subtitulo  do 01-->
+</hgroup> <!--fechamento da tag de agrupameno-->
+<img id = "iconeOculos"src="_imagens/fotos.png" alt="imagen01"> <!--tag para inserir imagens, src = caminho da imagem, onde esta localizada no pc, alt = descrição da mesma-->
+<nav id = "menu"> <!--tag de navegação do site-->
+  <h1>Menu Principal</h1>
+    <ul> <!--lista não ordenada do site, tbm tem ol = lista ordenada-->
+   <a href="index.html"><li onmousemove="mudaFoto ('_imagens/home.png')" onmouseout="mudaFoto ('_imagens/fotos.png')">Home</li></a> <!--<a> tag de link<a/>, <li> tag de item </li>-->
+   <a href="specs.html" target="_blank"><li onmousemove="mudaFoto ('_imagens/especificacoes.png')" onmouseout="mudaFoto ('_imagens/fotos.png')">Especificações</li></a> <!--taget = para abrir o link em outra aba-->
+   <a href="fotos.html"><li onmousemove="mudaFoto ('_imagens/fotos.png')" onmouseout="mudaFoto ('_imagens/fotos.png')">Fotos</li></a>
+   <a href="multimidia.html"><li onmousemove="mudaFoto ('_imagens/multimidia.png')" onmouseout="mudaFoto ('_imagens/fotos.png')">Multimídia</li></a>
+   <a href="fale-conosco.html"><li onmousemove="mudaFoto ('_imagens/contato.png')" onmouseout="mudaFoto ('_imagens/fotos.png')">Fale conosco</li></a>
+  </ul>
+</nav> <!--fechamento da tag de navegação-->
+</header> <!--fechamento da tag de cabeçalho-->
+
+<section id="corpo-full">
+  <article id="noticia-principal">
+  <header id="cabecalho-artigo">
+  <hgroup>
+  <h3>Glass > Fotos</h3>
+  <h1>Galeria de Imagens do Google Glass</h1>
+  <h2>por Victor Rayme</h2>
+  <h3 class="direita">Atualizado em 03/Dezembro/2022</h3>
+  </hgroup>
+  </header>
+<p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.</p>
+
+<ul id="album-fotos">
+<li id="foto01"><span>Agenda e lembretes</span></li>
+<li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+ <li id="foto03"><span>Leve e compacto</span></li>
+<li id="foto04"><span>Sensação de uma tela de 50</span></li>
+<li id="foto05"><span>Vários tipos de lente</span></li>
+<li id="foto06"><span>Informações importantes</span></li>
+</ul>
+
+</article>
+</section>
+<footer id="rodape">
+    <p><h3> &copy; Copyright 2022 - by Victor Rayme &reg;</h3>
+    <h3> <a href="https://www.linkedin.com/in/victor-rayme-7b9595241/" target="_blank">Linkedin |</a>
+     <a href="https://" target="_blank">GitHub</a></h3></p>
+    </footer>
+    </div> <!--fechamento da tag de fechamento da divisao da interface-->
+    </body> <!--fechamento do corpo do site-->
+    </html>
